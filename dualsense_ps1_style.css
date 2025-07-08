@@ -1,0 +1,44 @@
+
+/* DualSense Retrô - Estilo PS1 */
+body {
+    background-color: #e0e0e0 !important;
+}
+
+/* Ajuste da carcaça do controle */
+#controller {
+    filter: grayscale(30%) brightness(1.1);
+}
+
+/* Substituição dos botões principais (PS1 coloridos) */
+img[src*="button-south"] {
+    content: url("https://i.imgur.com/CZZIeuH.png"); /* X azul estilo PS1 */
+}
+img[src*="button-east"] {
+    content: url("https://i.imgur.com/BT8hL4d.png"); /* O vermelho estilo PS1 */
+}
+img[src*="button-west"] {
+    content: url("https://i.imgur.com/ehKUZnK.png"); /* quadrado rosa estilo PS1 */
+}
+img[src*="button-north"] {
+    content: url("https://i.imgur.com/F0ExWCU.png"); /* triângulo verde estilo PS1 */
+}
+
+/* Botão PS (central) com logo retrô */
+img[src*="button-meta"] {
+    content: url("https://i.imgur.com/Y07YMgC.png"); /* logo clássico da PS1 */
+}
+
+/* Botões L1/R1, L2/R2 em cinza escuro */
+img[src*="shoulder-left"],
+img[src*="shoulder-right"],
+img[src*="trigger-left"],
+img[src*="trigger-right"] {
+    filter: grayscale(100%) brightness(0.6);
+}
+
+/* Direcional e botões de menu com leve esmaecimento */
+img[src*="dpad"],
+img[src*="start"],
+img[src*="select"] {
+    filter: grayscale(70%) brightness(0.9);
+}
